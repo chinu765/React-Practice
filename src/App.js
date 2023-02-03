@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+
+import React from 'react'
+import Autocom from "./Autocom";
+// import Carousel  from "./Component/Carousel";
+import NavBar from "./Component/NavBar";
+// import Watch from "./Watch"
+import Stopwatch from "./Stopwatch"
+// import Todolist from "./Todolist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/> 
+      {/* <Carousel/> */}
+      {/* <Watch/>  */}
+      <Stopwatch/>
+      {/* <Todolist/> */}
+      <Autocom/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
